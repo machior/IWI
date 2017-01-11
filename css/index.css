@@ -1,0 +1,102 @@
+.selectedListItem {
+    list-style-type: none;
+    display:block;
+    text-transform: uppercase;
+    color: #A00;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-bottom: 1px solid #cacaca;
+    border-right: 1px solid #cacaca; /*right border between menu items*/
+    box-shadow: inset 7px 0 10px rgba(114,114,114, 0.6);
+    text-shadow: 0 -1px 1px #cfcfcf; /* CSS text shadow to give text some depth */
+    transition: all 0.1s ease-in-out;
+}
+
+.selectedListItem:hover{
+    color: #F00;
+    /*box-shadow: inset 7px 0 10px rgba(216,89,39, 0.5), inset 0 0 15px rgba(216,89,39, 0.6), inset 0 0 20px rgba(216,89,39, 0.8);*/
+    cursor: pointer;
+}
+
+.editingFieldHidden {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: none;
+/*    border: 1px solid red;*/
+}
+
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+/*    height: 100vw;*/
+    top: -100px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(2, 2, 2, 0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+    display: inline-block;
+}
+
+.modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+    color: black;
+}
+
+.modalDialog > div {
+    width: 50vw;
+    height: 30vw;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+}
+
+.tableDiv{
+    overflow-y: auto;
+    display: inline-block;
+}
+
+#tableWithData {
+    border: 1px solid black;
+}
+#tableWithData tr {
+    border: 1px solid black;
+    color: black;
+}
+#tableWithData tr td {
+    border: 1px solid black;
+    color: black;
+}
+
+.close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }

@@ -1,0 +1,67 @@
+body {
+    text-align: center;
+    background: #f6f5f2 url(http://www.keystone.com.pl/wp-content/themes/Keystone_Consulting_new/images/bck_subpage.jpg) no-repeat top center !important;
+    
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+    cursor: default;
+}
+
+#buttons {
+    height: 10%;
+    width: 100%;
+}
+
+#copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+}
+
+footer {
+    text-align: center;
+}
+
+#center {
+    height: 100%;
+}
+
+table > thead > tr > th{
+     text-align: center;
+}
+
+main {
+    /*height: 600px;*/
+    height: 80vh;
+}
+
+#map {
+    height: 100%;
+    box-shadow: 0 0 55px black;
+}
+
+.sidepanel{
+    overflow-y: auto;
+    max-height: 100%;
+    border: 1px solid #eee;
+    list-style: none;
+    font: bold 14px Germand;
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.sidepanel li{
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */
+    
+    text-transform: uppercase;
+    padding: 3px 5px;
+    border-bottom: 1px solid #cacaca;
+}
+
+.sidepanel li:hover{
+    box-shadow: inset 7px 0 10px rgba(216,89,39, 0.5), inset 0 0 15px rgba(216,89,39, 0.6), inset 0 0 20px rgba(216,89,39, 0.8);
+    cursor: pointer;
+}
